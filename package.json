@@ -58,8 +58,7 @@
     "passport-google-oauth": "^0.2.0",
     "passport-local": "^1.0.0",
     "underscore": "^1.8.3",
-    "velocity-animate": "^1.2.2",
-    //Est es una prueba
+    "velocity-animate": "^1.2.2",   
     "body-parser": "^1.12.2",
     "browserify": "^9.0.3",
     "connect-livereload": "^0.5.3",
