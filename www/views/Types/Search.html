@@ -1,0 +1,30 @@
+<aside class="sidenav-search">
+<form >
+<div  class="contenedor-search-movil md-toolbar-tools">
+					
+						<div>
+							 <input type="text" placeholder="Buscar"  ng-model="search" class="contenedor-busqueda-movil" >
+
+							 <md-content class="resultados-lista-movil" clearsearch>
+
+							<md-list class="search-container">
+								<md-list-item   ng-if="search" ng-repeat="busqueda in busquedas | filter:search | limitTo:10" >
+								<div class="md-list-item-text resaltar estilocats" >
+									<a href="#/busqueda/{{busqueda.ID}}" >
+							 	 		{{busqueda.Title}}
+							 	 	</a>
+								</div>
+							 	</md-list-item> 
+							</md-list> 
+
+						</md-content>
+
+						</div>
+</div>
+
+													
+</form>
+
+
+</aside>
+

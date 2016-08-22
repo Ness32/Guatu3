@@ -1,0 +1,25 @@
+{
+  "name": "GuatUneed_web",
+  "version": "0.0.1",
+  "main": "app.js",
+  "moduleType": [
+    "amd",
+    "node"
+  ],
+  "authors": [
+    "Daniel Pineda"
+  ],
+  "license": "MIT",
+  "homepage": "guatuneed.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "~0.96.1",
+    "mdi": "~1.0.62-beta"
+  }
+}

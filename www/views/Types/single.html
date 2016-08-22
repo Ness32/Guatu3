@@ -1,0 +1,103 @@
+<div ng-repeat="single in singles">
+	<aside id="sidebar" nano-scroll>
+		<div class="image-container" style="background-image:url({{single.thumb}})" ></div>
+		<div class="titulo-sucursales"> <h1>Sucursales</h1></div>
+		<div class="nano has-scrollbar">
+			<div class="nano-content" style="height: 300px;">
+				<ul class="estilosucursales">
+				<li ng-repeat="sucursal in sucursales">
+							{{sucursal.Title}}
+							<span  style="display: inline-block;">{{sucursal.Direccion}}</span>
+							<span  style="display: inline-block;">{{sucursal.Numero}}</span>
+				</li>
+			</ul>
+			</div>
+				
+		</div>
+	</aside>
+	<div id="insideView"  class="esconder">
+		<div class="estilotitulo ">
+			{{single.post_title}}
+		</div>
+		<div class="mobile-scroll">
+			
+			<div class="estilodescrip" ng-bind-html-unsafe="single.post_content">
+								
+			</div>
+					<div>
+							<div class="estiloletra mobile-size"  >
+						<div  class= "mobile-dis" >
+							<span class="bloque">Disponibilidad</span>
+							{{single.disponibilidad}}
+						</div>
+							
+						<div class="mobile-phone" >
+							<span class="bloque">Telefono</span>
+								{{single.numero}}
+						</div>						
+				</div>
+					<div class="estiloletra mobile-size"  >
+						<div class="mobile-dir" >
+								<span class="bloque">Direccion</span>	
+									{{single.direccion}}
+						</div>
+						<div class="mobile-url">
+							   <span class="bloque">Url</span> 
+								 
+								
+								 	<a href="{{single.url}}" target="_blank" style="text-decoration:none"> {{single.post_title}}</a>
+
+								 
+								
+
+						</div>
+					</div>
+					</div>
+				
+
+		</div>
+		
+					
+	<!--seccion de sigle-->
+	</div>
+
+<!-- Search-->
+
+<aside class ="sidenav-search-single  hide-for-small-only">
+
+<form >
+<div  class="contenedor-search-movil md-toolbar-tools" ng-controller="SearchCtrl">
+					
+						
+							 <input type="text" placeholder="Buscar"  ng-model="search" class="contenedor-busqueda-movil" >
+							 <span class="icono-cerrar-movil" ng-controller="ContactoCtrl"  ng-click="cerrarbusqueda() ">
+										<svg class="small icon-cross"><use xlink:href="svg/icons.svg#icon-cross"></use></svg>
+									</span>
+
+							 <md-content class="resultados-lista-movil" clearsearch>
+
+							<md-list class="search-container">
+								<md-list-item   ng-if="search" ng-repeat="busqueda in busquedas | filter:search | limitTo:10" >
+								<div class="md-list-item-text resaltar estilocats" >
+									<a href="#/search/busqueda/{{busqueda.ID}}" >
+							 	 		{{busqueda.Title}}
+							 	 	</a>
+								</div>
+							 	</md-list-item> 
+							</md-list> 
+
+						</md-content>
+
+						
+</div>
+
+													
+</form>	
+
+
+</aside>
+
+<!-- Fin -->
+
+
+</div>

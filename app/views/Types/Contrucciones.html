@@ -1,0 +1,63 @@
+<aside id="sidebar" >
+	<div class="image-container construcciones"></div>
+
+</aside>
+<div id="insideView"  class="esconder">
+	<div class="estilotitulo">
+		{{title}}
+		<div class="estilosub">
+			Subcategorias:{{contador}}		
+		</div>
+	</div>		
+			<div class="estilodiv">
+				<ul class="estilocats barranavegacion">
+					<li ng-repeat="cat in cats | orderBy:'name'">
+						<a class="boton" href="#/{{cat.taxonomy}}/{{cat.term_id}}">
+								<span class="letra-subcat">{{cat.name}}</span>	
+								<svg class="flecha icon-arrow-right"><use xlink:href="svg/icons.svg#icon-arrow-right"></use></svg>		
+						</a>	
+					</li>
+				</ul>
+			</div>
+
+		<!--Seccion de  Contrucciones -->
+<!-- Search-->
+
+<aside class ="sidenav-search-cat2  hide-for-small-only">
+
+<form >
+<div  class="contenedor-search-movil md-toolbar-tools" ng-controller="SearchCtrl">
+					
+						
+							 <input type="text" placeholder="Buscar"  ng-model="search" class="contenedor-busqueda-movil" >
+							 <span class="icono-cerrar-movil" ng-controller="ContactoCtrl"  ng-click="cerrarbusqueda() ">
+										<svg class="small icon-cross"><use xlink:href="svg/icons.svg#icon-cross"></use></svg>
+									</span>
+
+							 <md-content class="resultados-lista-movil-cat" clearsearch>
+
+							<md-list class="search-container">
+								<md-list-item   ng-if="search" ng-repeat="busqueda in busquedas | filter:search | limitTo:10" >
+								<div class="md-list-item-text resaltar estilocats" >
+									<a href="#/search/busqueda/{{busqueda.ID}}" >
+							 	 		{{busqueda.Title}}
+							 	 	</a>
+								</div>
+							 	</md-list-item> 
+							</md-list> 
+
+						</md-content>
+
+						
+</div>
+
+													
+</form>	
+
+
+</aside>
+
+<!-- Fin -->
+		
+</div>
+

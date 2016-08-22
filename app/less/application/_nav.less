@@ -1,0 +1,147 @@
+md-toolbar.guatuneed_theme{
+	box-shadow: none;
+	overflow: hidden;
+	a, svg{
+		
+	}
+	#logo{
+		border-right: 1px solid lighten(@dividerColor, 25%);
+		text-align: center;
+		a{
+			font-size: 1.4em;
+			
+		}
+
+	}
+	#search{
+		border-left:  1px solid darken(@primaryColor, 5%);
+		margin-left: 40px;
+		height: 100%;
+		padding: 0 0 !important;
+
+		.search_input{
+			padding: 19.5px;
+			border-bottom: none;
+			width: 100%;
+			border-left: none;
+			border-top: none;
+			border-right: 1px solid darken(@primaryColor, 5%);
+			background-color: transparent;
+			color: #fff;
+			
+			&::-webkit-input-placeholder{
+				color: darken(@primaryColor, 10%);
+				font-weight: 300;
+			}
+		}
+	}
+}
+
+//
+//	Sidenav
+//
+#sidenav{
+	
+	width: 3%;
+	
+	@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+		width: 6.4%;
+	}
+	.normal-transition;
+	.sidebar-container{
+		text-align: left;
+		overflow:hidden;
+	    width: 350px;
+   	    height: 670px; 
+
+	}
+	&.open{
+		width: 15%;
+		@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+		width: 35%;
+	}
+
+	}
+
+	.nostyle{
+		list-style:none;
+	    padding: 0;
+		height: 600px;
+
+	}
+	span.letra{
+		margin-left: 20px;
+		position: absolute;
+	   	text-transform: uppercase;
+   	    -webkit-transform:translateX(20px);
+   	  	transform:translateX(20px);
+   	  	text-decoration:none;
+   	  	font-family:'Open Sans',sans-serif;
+   	  	   	 
+	}
+	.nada{}	
+	.li-conteiner{
+			width: 250px;
+	 		position: relative;
+	 		padding: 10px 15px;
+	 		cursor: pointer;
+	 			@media only screen and (max-width: 40em) {
+			cursor: pointer;
+		}
+
+
+	}
+	.mobile{
+		@media only screen and (max-width: 40em) {
+			margin-left: 10px;
+		}
+		
+	}	
+	
+}
+
+#mobile-sidenav{
+	.mobile-style{
+		list-style: none;
+		  overflow: hidden;
+	}
+.li-mobile-conteiner{
+		@media only screen and (max-width: 40em) {
+	 			width: 350px;
+	 		position: relative;
+	 		padding: 10px 15px;
+	 		
+
+	 		}
+	}
+	span.letra{
+		margin-left: 20px;
+		position: absolute;
+	   	text-transform: uppercase;
+   	    -webkit-transform:translateX(20px);
+   	  	transform:translateX(20px);
+   	  	text-decoration:none;
+   	  	font-family:'Open Sans',sans-serif;
+
+   	  	   	 
+	}
+}
+.prueba{
+	@media only screen and (max-width: 40em) {
+		  overflow: hidden;		  		
+		 }
+}
+.letra-subcat{
+	font-size: 120%;
+	@media only screen and (max-width: 40em) {
+		  	margin-left: 25px;	
+		 }
+	
+}
+
+.bloquear-taxi{
+@media only screen and (max-width: 40em) {
+		  	overflow: hidden;
+		 }
+
+}

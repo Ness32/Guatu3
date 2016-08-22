@@ -1,0 +1,202 @@
+
+	<div class="home-banner">
+		<div class="imagen-home">
+		<img src="../img/logo-full.png" alt="">
+		</div>
+		<div class="eslogan">
+			<h1>El directorio mas confiable de Guate</h1>
+		</div>
+</div>
+<div  ng-controller="System">
+				<div class="contactanos">
+				<h1>			
+				Disponible En			
+				</h1>
+					
+			</div>
+					<div class="play-badge">
+							<a href="https://play.google.com/store/apps/details?id=com.klaser.guatuneed" target="_blank">
+							  <img alt="Android app on Google Play"
+							       src="https://developer.android.com/images/brand/es-419_app_rgb_wo_45.png" />
+							</a>
+					</div>	
+					<div class="app-badge">
+						<a href="https://itunes.apple.com/us/app/guatuneed/id955889296?mt=8" target="_blank">
+							  <img alt="App Store"
+							       src="svg/App_Store.svg" />
+							</a>	
+					</div>
+</div>
+
+<div class="anuncios-scroll" >
+	<div class="hide-for-small-only">
+		<div class="anuncios" layout="row">
+			<div id="anuncio1" class="anuncio">    
+					<ul  style="height: 100%;"rn-carousel rn-carousel-transition="zoom"  rn-carousel-auto-slide >
+					  <li ng-repeat ="anuncio in  anuncios" >
+					    <div  class ="imagenanuncio " style="background-image:url({{ anuncio.thumb }})"></div>
+					  </li>
+					</ul>				
+			</div>
+		<div id="anuncio2" class="anuncio">
+			<ul style="height: 100%;"rn-carousel  rn-carousel-transition="zoom" rn-carousel-auto-slide>
+				<li ng-repeat="oferta in ofertas">
+					<div class="imagenanuncio" style="background-image:url({{ oferta.thumb }})"></div>
+				</li>
+			</ul>			
+		</div>
+	</div>
+	</div>
+	 <div class="show-for-small-only">
+	 	<div class="anuncios" layout="column">
+			<div id="anuncio1" class="anuncio">    
+					<ul  style="height: 100%;"rn-carousel rn-carousel-transition="zoom"  rn-carousel-auto-slide >
+					  <li ng-repeat ="anuncio in  anuncios" >
+					    <div  class ="imagenanuncio " style="background-image:url({{ anuncio.thumb }})"></div>
+					  </li>
+					</ul>				
+			</div>
+		<div id="anuncio2" class="anuncio">
+			<ul style="height: 100%;"rn-carousel  rn-carousel-transition="zoom" rn-carousel-auto-slide>
+				<li ng-repeat="oferta in ofertas">
+					<div class="imagenanuncio" style="background-image:url({{ oferta.thumb }})"></div>
+				</li>
+			</ul>			
+		</div>
+	</div>
+
+
+	 </div>
+		<div class="contactanos">
+				<h1>			
+				¿Deseas que tu negocio o empresa esté en GuatUneed?				
+				</h1>
+				<button class="botton"contactos>contáctanos</button>
+						
+					
+			</div>
+			<!-- incio contenedor de video-->
+				<div class="video-container hide-for-small-only">
+					<div class="overlay"></div>
+					<div class="contenedor-icono">
+						 <svg class="icon-play" video><use xlink:href="svg/iconsplay.svg#icon-play"></use></svg> 	
+					</div>
+					<div class="main-video">
+						<iframe width="1020" height="520" src="https://www.youtube.com/embed/ooF6Ek24rg4" frameborder="0" allowfullscreen></iframe>
+					</div>					
+				</div>
+				<!-- Fin del contenedor de video-->
+				
+
+				<!-- Busqueda -->
+									
+<aside class ="sidenav-search  hide-for-small-only">
+
+<form >
+<div  class="contenedor-search-movil md-toolbar-tools" ng-controller="SearchCtrl">
+					
+						
+							 <input type="text" placeholder="Buscar"  ng-model="search" class="contenedor-busqueda-movil" >
+							 <span class="icono-cerrar-movil" ng-controller="ContactoCtrl"  ng-click="cerrarbusqueda() ">
+										<svg class="small icon-cross"><use xlink:href="svg/icons.svg#icon-cross"></use></svg>
+									</span>
+
+							 <md-content class="resultados-lista-movil" clearsearch>
+
+							<md-list class="search-container">
+								<md-list-item   ng-if="search" ng-repeat="busqueda in busquedas | filter:search | limitTo:10" >
+								<div class="md-list-item-text resaltar estilocats" >
+									<a href="#/search/busqueda/{{busqueda.ID}}" >
+							 	 		{{busqueda.Title}}
+							 	 	</a>
+								</div>
+							 	</md-list-item> 
+							</md-list> 
+
+						</md-content>
+
+						
+</div>
+
+													
+</form>	
+
+
+</aside>
+
+<!-- Taxis-->
+<aside class ="sidenav-taxi  hide-for-small-only">
+
+<form >
+<div  class="contenedor-search-taxi">				
+						
+							
+	 <span class="icono-cerrar-movil" ng-controller="ContactoCtrl"  ng-click="cerrartaxi() ">
+	<div class="mov-button">
+		<svg class="small icon-cross"><use xlink:href="svg/icons.svg#icon-cross"></use></svg>
+		</span>	
+		 <a   style ="margin-top: 14px;"class="button2 blue large" href="tel:24701515">Llamar</a>
+
+	</div>
+													
+</div>
+
+													
+</form>	
+
+
+</aside>
+
+
+
+<!-- Taxis-->
+
+
+
+			
+				<!-- Inicia  navegador de contactos-->
+				<aside class="sidenav-contacto hide-for-small-only" ng-controller="ContactoCtrl">
+					<div class="contenedor-contactos">	
+						<form >
+							<div class="contenedor-titulo" >
+								<h3>
+									Ventas GuatuNeed
+								</h3>
+									<span class="icono-cerrar">
+										<svg class="small icon-cross"><use xlink:href="svg/icons.svg#icon-cross"></use></svg>
+									</span>
+							</div>
+							<div class="group inline" layout="" layout-sm="column">
+								 <md-input-container flex="">
+						          <label>Nombre</label>
+						          <input ng-model="contacto.nombre">
+						        </md-input-container>								
+							</div>
+							<div class="group inline" layout="" layout-sm="column">
+								 	<md-input-container flex="">
+						          	<label>Email</label>
+						          	<input ng-model="contacto.email">
+						        </md-input-container>	
+							</div>
+							<div class="group inline" layout="" layout-sm="column">
+								<md-input-container flex="">
+						          <label>Mensaje</label>
+						          <textarea ng-model="contacto.mensaje" columns="1"></textarea>
+						        </md-input-container>	        								
+							</div>
+							<div>
+							 <button type="submit" class="botonazul" ng-click="hacerContacto()">Enviar</button>
+							</div>							
+						</form>
+					</div>
+				</aside>
+				<!--Fin del  navegador de contacos -->				
+				<footer id="main-fooder" class="hide-for-small-only">
+					<ul>
+						
+						<li>Klaser S,A todos los derechos reservados 2015</li>
+					</ul>
+				</footer>	
+						
+			
+</div>

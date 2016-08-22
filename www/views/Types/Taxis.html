@@ -1,0 +1,23 @@
+<aside id="sidebar" >
+	<div class="image-container taxis"></div>
+
+</aside>
+<div id="insideView"  class="esconder">
+	<div class="estilotitulo">
+		{{title}}
+		<div class="estilosub">
+			Subcategorias:{{contador}}		
+		</div>
+	</div>
+		<div class="estilodiv">
+				<ul class="estilocats barranavegacion">
+					<li ng-repeat="cat in cats | orderBy:'name'">
+						<a class="boton" href="#/{{cat.taxonomy}}/{{cat.term_id}}">
+								<span class="letra">{{cat.name}}</span>	
+								<svg class="flecha icon-arrow-right"><use xlink:href="svg/icons.svg#icon-arrow-right"></use></svg>		
+						</a>	
+					</li>
+				</ul>
+			</div>
+<!--seccion de Taxis-->
+</div>

@@ -1,0 +1,71 @@
+aside{
+	&#sidebar{
+		position:fixed;
+		height: 100%;
+		width: 30%;
+		background-color: rgba(0, 0, 0, 1);
+		top: 0;
+		z-index: 1;
+		@media only screen and (max-width: 40em) {
+		z-index: 0;
+		height:0%;
+		width:0%;
+		}
+	}
+	.image-container{
+		width: 100%;
+		height: 50%;
+		background-position: center center;
+		background-size: cover;
+		padding-bottom: 1px;		
+
+		&.abogados{
+			background-image: url('../img/sidebars/abogados.jpg');
+			
+		}
+		&.construcciones{
+			background-image: url('../img/sidebars/construccion.jpg');
+		}
+		&.comidas{
+			background-image: url('../img/sidebars/comida.jpg');
+		}
+		&.deportes{
+			background-image: url('../img/sidebars/deportes.jpg');
+		}
+		&.educaciones{
+			background-image: url('../img/sidebars/educacion.jpg');
+		}
+		&.entretenimientos{
+			background-image: url('../img/sidebars/entretenimiento.jpg');
+		}
+		&.gobierno{
+			background-image: url('../img/sidebars/gobierno.jpg');
+		}
+		&.medicinas{
+			background-image: url('../img/sidebars/medicina.jpg');
+		}
+		&.modas{
+			background-image: url('../img/sidebars/moda.jpg');
+		}
+		&.tagnight{
+			background-image: url('../img/sidebars/night.jpg');
+		}
+		&.productos{
+			background-image: url('../img/sidebars/productos.jpg');
+		}
+		&.servicios{
+			background-image: url('../img/sidebars/prodserv.jpg');
+		}
+		&.taxis{
+
+		}
+		&.turismos{
+			background-image: url('../img/sidebars/turismo.jpg');
+		}
+		&.vehiculos{
+			background-image: url('../img/sidebars/vehiculos.jpg');
+		}
+
+	}
+
+}

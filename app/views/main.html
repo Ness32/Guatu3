@@ -1,0 +1,391 @@
+<div layout="column" class="bandera-full full-screen">
+	<section layout="row" flex class="bandera-full full-screen">
+		
+			<section id="mobile-sidenav" class=" mostrar-mobile">
+				<!--sidenav para moviles-->
+			
+				<div class="nano" menu-scroll  ng-controller="ContactoCtrl">
+					<ul class="mobile-style nano-content ">
+						<div >
+							<li  class="li-mobile-conteiner" ui-sref="main.home" ng-click="invisible()">						
+								<div>
+								 	<svg class="small icon-fontello-6 "><use xlink:href="svg/icons.svg#icon-fontello-6"></use></svg> 
+								 					
+									<span class="letra">
+										inicio
+									</span>
+								</div>								
+							</li>
+							<li ui-sref="main.abogados">
+								    <div class="li-mobile-conteiner" >
+									    <svg class="small icon-law"><use xlink:href="svg/icons.svg#icon-law"></use></svg>
+										<span class="letra">
+										   abogados
+										</span>
+								    </div>						
+							</li >
+							<li   ui-sref="main.contrucciones"  urls>						
+								<div class="li-mobile-conteiner" >
+									<svg class="small icon-building"><use xlink:href="svg/icons.svg#icon-building"></use></svg>
+									<span class="letra">
+										construcciones
+									</span>
+								</div>						
+							</li>
+							<li  ui-sref="main.comida">						
+								<div class="li-mobile-conteiner">
+									<svg class="small icon-fontello"><use xlink:href="svg/icons.svg#icon-fontello"></use></svg>							
+									<span class="letra">
+										comida
+									</span>
+								</div>						
+							</li>
+							<li ui-sref="main.deportes">						
+									<div class="li-mobile-conteiner">
+										<svg class="small icon-bike"><use xlink:href="svg/icons.svg#icon-bike"></use></svg>							
+										<span class="letra">
+											deportes
+										</span>	
+									</div>	
+							</li>
+							<li  ui-sref="main.educacion">						
+								<div class="li-mobile-conteiner">
+									<svg class="small icon-fontello-5"><use xlink:href="svg/icons.svg#icon-fontello-5"></use></svg>							
+									<span class="letra">
+										 educacion
+									</span>
+								</div>	
+							</li>
+							<li  ui-sref="main.entretenimiento">					
+								<div class="li-mobile-conteiner">
+									<svg class="small icon-fontello-9"><use xlink:href="svg/icons.svg#icon-fontello-9"></use></svg>
+									<span class="letra">
+										entretenimiento
+									</span>
+								</div>											
+							</li>
+							<li ui-sref="main.gobierno">						
+								<div class="li-mobile-conteiner">
+									<svg class="small icon-fontello-7"><use xlink:href="svg/icons.svg#icon-fontello-7"></use></svg>							
+									<span class="letra">
+		 								gobierno
+									</span>
+								</div>					
+							</li>
+							<li  ui-sref="main.medicina">						
+									<div class="li-mobile-conteiner">
+										<svg class="small icon-fontello-4"><use xlink:href="svg/icons.svg#icon-fontello-4"></use></svg>
+										<span class="letra">
+		                               			medicina
+										</span>		
+									</div>					
+							</li>
+							<li ui-sref="main.moda">						
+								<div class="li-mobile-conteiner">
+									<svg class="small icon-shoes-snickers-streamline"><use xlink:href="svg/icons.svg#icon-shoes-snickers-streamline"></use></svg>
+									<span class="letra">
+										moda
+									</span>
+								</div>						
+							</li>
+							<li  ui-sref="main.nightlife">
+								<div class="li-mobile-conteiner">
+									<svg class="small icon-fontello-14"><use xlink:href="svg/icons.svg#icon-fontello-14"></use></svg>
+									<span class="letra">
+									   nightlife 
+									</span>
+								</div>
+							</li>
+							<li  ui-sref="main.productos">
+								<div class="li-mobile-conteiner" ng-controller ="Systemovil">
+									<svg class="small icon-fontello-10"><use xlink:href="svg/icons.svg#icon-fontello-10"></use></svg>
+									<span class="letra">
+										Productos
+									</span>
+								</div>
+							</li>
+							<li  ui-sref="main.servicios">
+								<div class="li-mobile-conteiner">
+									<svg class="small icon-group-full"><use xlink:href="svg/icons.svg#icon-group-full"></use></svg>
+									<span class="letra">
+										Servicios
+									</span>
+								</div>
+							</li>
+							<li ng-controller = "ContactoCtrl" ng-click="llamartaxi()">
+								<div class="li-mobile-conteiner" >
+									<svg class="small icon-fontello-8"><use xlink:href="svg/icons.svg#icon-fontello-8"></use></svg>
+									<span class="letra">
+										Taxis
+									</span>
+								</div>
+							</li>
+							<li ui-sref="main.turismo">
+								<div class="li-mobile-conteiner">
+									<svg class=" small icon-fontello-11"><use xlink:href="svg/icons.svg#icon-fontello-11"></use></svg>
+									<span class="letra">
+										Turismo		
+									</span>
+								</div>
+							</li>
+							<li  ui-sref="main.vehiculos">
+								<div class="li-mobiles-conteiner">
+									<svg class="small icon-fontello-12"><use xlink:href="svg/icons.svg#icon-fontello-12"></use></svg>
+									<span class="letra">
+										Vehiculos
+									</span>
+								</div>
+							</li>
+						</div>
+					</ul>
+				</div>
+				
+			
+			<!--fin sidenav para moviles -->
+
+
+			</section>
+
+			<!---->
+		<section id="sidenav" class="hide-for-small-only" menu-trigger>			
+
+			<div class="sidebar-container">
+				<!-- aca esta  para programar la barra hay que agregar mas div -->
+				<div class="md-toolbar-tools">
+
+					<a href="#" class="menu_trigger">
+						<md-icon md-svg-icon="svg/icons/menu.svg"></md-icon>
+					</a>					
+				</div>
+				<!-- aca estan los iconos de  las categorias   -->
+				<div class="nano" menu-scroll >
+					<ul class="  nostyle  nano-content  ">
+						<div>
+							<li  class="li-conteiner" ui-sref="main.home">						
+								<div>
+								 	<svg class="small icon-fontello-6 "><use xlink:href="svg/icons.svg#icon-fontello-6"></use></svg> 
+								 					
+									<span class="letra">
+										inicio
+									</span>
+								</div>								
+							</li>
+							<li ui-sref="main.abogados">
+								    <div class="li-conteiner">
+									    <svg class="small icon-law"><use xlink:href="svg/icons.svg#icon-law"></use></svg>
+										<span class="letra">
+										   abogados
+										</span>
+								    </div>						
+							</li >
+							<li   ui-sref="main.contrucciones" urls>						
+								<div class="li-conteiner">
+									<svg class="small icon-building"><use xlink:href="svg/icons.svg#icon-building"></use></svg>
+									<span class="letra">
+										construcciones
+									</span>
+								</div>						
+							</li>
+							<li  ui-sref="main.comida">						
+								<div class="li-conteiner">
+									<svg class="small icon-fontello"><use xlink:href="svg/icons.svg#icon-fontello"></use></svg>							
+									<span class="letra">
+										comida
+									</span>
+								</div>						
+							</li>
+							<li ui-sref="main.deportes">						
+									<div class="li-conteiner">
+										<svg class="small icon-bike"><use xlink:href="svg/icons.svg#icon-bike"></use></svg>							
+										<span class="letra">
+											deportes
+										</span>	
+									</div>	
+							</li>
+							<li  ui-sref="main.educacion">						
+								<div class="li-conteiner">
+									<svg class="small icon-fontello-5"><use xlink:href="svg/icons.svg#icon-fontello-5"></use></svg>							
+									<span class="letra">
+										 educacion
+									</span>
+								</div>	
+							</li>
+							<li  ui-sref="main.entretenimiento">					
+								<div class="li-conteiner">
+									<svg class="small icon-fontello-9"><use xlink:href="svg/icons.svg#icon-fontello-9"></use></svg>
+									<span class="letra">
+										entretenimiento
+									</span>
+								</div>											
+							</li>
+							<li ui-sref="main.gobierno">						
+								<div class="li-conteiner">
+									<svg class="small icon-fontello-7"><use xlink:href="svg/icons.svg#icon-fontello-7"></use></svg>							
+									<span class="letra">
+		 								gobierno
+									</span>
+								</div>					
+							</li>
+							<li  ui-sref="main.medicina">						
+									<div class="li-conteiner">
+										<svg class="small icon-fontello-4"><use xlink:href="svg/icons.svg#icon-fontello-4"></use></svg>
+										<span class="letra">
+		                               			medicina
+										</span>		
+									</div>					
+							</li>
+							<li ui-sref="main.moda">						
+								<div class="li-conteiner">
+									<svg class="small icon-shoes-snickers-streamline"><use xlink:href="svg/icons.svg#icon-shoes-snickers-streamline"></use></svg>
+									<span class="letra">
+										moda
+									</span>
+								</div>						
+							</li>
+							<li  ui-sref="main.nightlife">
+								<div class="li-conteiner">
+									<svg class="small icon-fontello-14"><use xlink:href="svg/icons.svg#icon-fontello-14"></use></svg>
+									<span class="letra">
+									   nightlife 
+									</span>
+								</div>
+							</li>
+							<li  ui-sref="main.productos">
+								<div class="li-conteiner">
+									<svg class="small icon-fontello-10"><use xlink:href="svg/icons.svg#icon-fontello-10"></use></svg>
+									<span class="letra">
+										Productos
+									</span>
+								</div>
+							</li>
+							<li  ui-sref="main.servicios">
+								<div class="li-conteiner">
+									<svg class="small icon-group-full"><use xlink:href="svg/icons.svg#icon-group-full"></use></svg>
+									<span class="letra">
+										Servicios
+									</span>
+								</div>
+							</li>
+							<li >
+								<div class="li-conteiner show-for-small-only">
+									<svg class="small icon-fontello-8"><use xlink:href="svg/icons.svg#icon-fontello-8"></use></svg>
+									<span class="letra">
+										Taxis
+									</span>
+								</div>
+							</li>
+							<li ui-sref="main.turismo">
+								<div class="li-conteiner">
+									<svg class=" small icon-fontello-11"><use xlink:href="svg/icons.svg#icon-fontello-11"></use></svg>
+									<span class="letra">
+										Turismo		
+									</span>
+								</div>
+							</li>
+							<li  ui-sref="main.vehiculos">
+								<div class="li-conteiner">
+									<svg class="small icon-fontello-12"><use xlink:href="svg/icons.svg#icon-fontello-12"></use></svg>
+									<span class="letra">
+										Vehiculos
+									</span>
+								</div>
+							</li>
+						</div>
+					</ul>
+				</div>
+				<!-- aca terminan los iconos de las categorias -->
+			</div>
+		</section>
+		<section  id="wrapper" class="nada">
+			<md-toolbar class="guatuneed_theme">
+
+				<div class="md-toolbar-tools esconder">
+					<div >
+						<section  class="show-for-small-only " >
+							<div class="md-toolbar-tools ">
+								<div class="nada-movil hide-for-small-only" style="margin-right: 15px;margin-bottom: -10px;">
+									<svg class="  flecha-regresar icon-arrow-left " ><use xlink:href="svg/icons.svg#icon-arrow-left" onclick="history.back()"></use></svg> 
+
+								</div>
+								
+								<a href="#"  class="mobile" menuMobile>
+									<md-icon md-svg-icon="svg/icons/menu.svg" ></md-icon>
+								</a>					
+							</div>
+					</section>
+					</div>
+					
+
+					<h2>
+						<span ui-sref="main.home">GuatUneed</span>
+					</h2>
+
+			
+					<span flex></span>	
+									
+					<div  ng-controller ="SearchCtrl" class="contenedor-search">
+					
+						<div>
+							 <input type="text" placeholder="Buscar"  ng-model="search" class="contenedor-busqueda" >
+
+							 <md-content class="resultados-lista" clearsearch>
+
+							<md-list class="search-container">
+								<md-list-item   ng-if="search" ng-repeat="busqueda in busquedas | filter:search | limitTo:10" >
+								<div class="md-list-item-text resaltar" >
+									<a href="#/search/busqueda/{{busqueda.ID}}" >
+							 	 		{{busqueda.Title}}
+							 	 	</a>
+								</div>
+							 	</md-list-item> 
+							</md-list> 
+
+						</md-content>
+
+						</div>
+				</div>	
+						<div class="show-for-small-only ">
+								<md-button class="md-icon-button mostrar-search" aria-label="Search" ng-controller="ContactoCtrl" ng-click="busqueda()">
+						<svg class="icon-search-find md-icon"><use xlink:href="svg/icons.svg#icon-search-find"></use></svg>
+
+					</md-button>
+
+
+
+							 	
+						</div>
+							<div class="hide-for-small-only">
+									<md-button class="md-icon-button mostrar-search" aria-label="Search" ng-controller="ContactoCtrl"  ng-click="seguir()">
+						<svg class="icon-search-find md-icon"><use xlink:href="svg/icons.svg#icon-search-find"></use></svg>
+					</md-button>
+
+
+
+
+							</div>
+								
+					<div ng-controller="ContactoCtrl ">
+					<md-menu md-position-mode="target-right target">
+					<md-button class="md-icon-button" aria-label="More" ng-click="$mdOpenMenu()">
+						<md-icon md-menu-origin="" md-svg-icon="svg/icons/more_vert.svg" ></md-icon>
+					</md-button>
+					<md-menu-content>
+						<md-menu-item>
+								<md-button  ng-click="mensaje()">										
+										Terminos de uso
+								</md-button>
+						</md-menu-item>
+					</md-menu-content>
+			</md-menu>
+							
+			</div>		
+		
+				</div>
+			</md-toolbar>
+			<section id="view-wrapper" layout="column">
+				
+				<div ui-view="MainView" class="bandera navegacion-home" ng-controller="ContactoCtrl"></div>
+			</section>
+		</section>
+	</section>
+</div>
