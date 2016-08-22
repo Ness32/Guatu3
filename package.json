@@ -2,6 +2,10 @@
   "name": "GuatUneed_web",
   "version": "0.1.0",
   "description": "",
+   "engines": {
+    "node": "4.2.6",
+    "npm": "3.5.2"
+  },
   "main": "app.js",
   "scripts": {
     "test": "mocha test",
